@@ -2,7 +2,7 @@
 
 ![terraform](https://img.shields.io/badge/-UML-white?style=for-the-badge&logo=UML&color=FABD14&logoColor=white)
 
-Este é um diagrama UML que representa a estrutura de classes e interfaces para um sistema que inclui a modelagem do iPhone, um dispositivo que incorpora funcionalidades de um reprodutor de música, um telefone e um navegador de internet. Este diagrama foi criado como parte do desafio de projeto do **Santander Bootcamp 2024 - *Backend com Java** na DIO.me.
+Este é um diagrama UML que representa a estrutura de classes e interfaces para um sistema que inclui a modelagem do iPhone, um dispositivo que incorpora funcionalidades de um reprodutor de música, um telefone e um navegador de internet. Este diagrama foi criado como parte do desafio de projeto do **Santander Bootcamp 2024 - Backend com Java** na DIO.me.
 
 ![diagrama-uml-iphone-jucastrum](https://github.com/jucastrum/Diagramacao-de-Classes-do-iPhone/assets/111366922/80747a34-9077-4ae9-b5b9-cc0ad33ece41)
 
