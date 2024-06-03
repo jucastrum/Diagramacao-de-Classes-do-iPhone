@@ -1,7 +1,8 @@
 @startuml
-title Orientação a Objetos e UML: Diagramação de Classes do iPhone
+title Modelando o iPhone com UML por jucastrum
 
 skinparam classAttributeIconSize 0
+
 interface "Reprodutor Musical" as ReprodutorMusical {
   -Musica[] musicas
   +tocar(): void
@@ -14,41 +15,44 @@ note top of ReprodutorMusical
   arquivos de áudio.
 end note
 
+interface "Aparelho Telefônico" as AparelhoTelefonico {
+  -Contato[] contatos
+  +redeMovelDisponivel(): Boolean
+  +ligar(): void
+  +atender(): void
+  +iniciarCorreioVoz(): void
+}
 note top of AparelhoTelefonico
   Interface encarregada de implementar
   a funcionalidade de um telefone.
-end note
-
-note top of Musica
-  Classe responsável por 
-  armazenar informações 
-  das músicas.
 end note
 
 class Musica {
   nome: String
   caminho: String
 }
-
-note top of Contato
+note top of Musica
   Classe responsável por 
   armazenar informações 
-  de contato.
+  das músicas.
 end note
 
 class Contato {
   nome: String
   numero: String
 }
+note top of Contato
+  Classe responsável por 
+  armazenar informações 
+  de contato.
+end note
 
-interface "Aparelho Telefônico" as AparelhoTelefonico {
-  -Contato[] contatos
-  -redeMovelDisponivel(): Boolean
-  +ligar(): void
-  +atender(): void
-  +iniciarCorreioVoz(): void
+interface "Navegador de Internet" as NavegadorInternet {
+  +ConexaoComInternet(): Boolean
+  +exibirPagina(): void
+  +adicionarNovaAba(): void
+  +atualizarPagina(): void
 }
-
 note top of NavegadorInternet
   Interface encarregada
   de implementar
@@ -56,36 +60,29 @@ note top of NavegadorInternet
   de um navegador.
 end note
 
-interface "Navegador de Internet" as NavegadorInternet {
-  -ConexaoComInternet(): Boolean
-  +exibirPagina(): void
-  +adicionarNovaAba(): void
-  +atualizarPagina(): void
-}
+class IPhone {}
 
-entity "IPhone" as IPhone {}
+class Safari {}
+class Chrome {}
 
-entity "FireFox" as FireFox {}
-entity "Chrome" as Chrome {}
+class NokiaE62 {}
+class BlackBerry {}
 
-entity "Nokia 3310" as Nokia3310 {}
-entity "Motorola Razr V3" as MotorolaRazrV3 {}
-
-entity "Walkman" as Walkman {}
-entity "Discman" as Discman {}
+class Walkman {}
+class Ipod {}
 
 IPhone --> AparelhoTelefonico
 IPhone --> NavegadorInternet
 IPhone --> ReprodutorMusical
 ReprodutorMusical --o Musica
-AparelhoTelefonico <-- Nokia3310
-AparelhoTelefonico <-- MotorolaRazrV3
+AparelhoTelefonico <-- NokiaE62
+AparelhoTelefonico <-- BlackBerry
 AparelhoTelefonico --o Contato
 
 ReprodutorMusical <-- Walkman
-ReprodutorMusical <-- Discman
+ReprodutorMusical <-- Ipod
 
-NavegadorInternet <-- FireFox
+NavegadorInternet <-- Safari
 NavegadorInternet <-- Chrome
 
 @enduml
