@@ -2,9 +2,9 @@
 
 ![terraform](https://img.shields.io/badge/-UML-white?style=for-the-badge&logo=UML&color=FABD14&logoColor=white)
 
-Este é um diagrama UML que representa a estrutura de classes e interfaces para um sistema que inclui a modelagem do iPhone, um dispositivo que incorpora funcionalidades de um reprodutor de música, um telefone e um navegador de internet. Este diagrama foi criado como parte do desafio de projeto do **Santander Bootcamp 2023 - Fullstack Java+Angular** na DIO.me.
+Este é um diagrama UML que representa a estrutura de classes e interfaces para um sistema que inclui a modelagem do iPhone, um dispositivo que incorpora funcionalidades de um reprodutor de música, um telefone e um navegador de internet. Este diagrama foi criado como parte do desafio de projeto do **Santander Bootcamp 2024 - *Backend com Java** na DIO.me.
 
-![iphone](https://raw.githubusercontent.com/SilvioCavalcantiBonfim/Diagramacao-de-Classes-do-iPhone/0.1.0/iphone.png)
+![diagrama-uml-iphone-jucastrum](https://github.com/jucastrum/Diagramacao-de-Classes-do-iPhone/assets/111366922/80747a34-9077-4ae9-b5b9-cc0ad33ece41)
 
 
 ## Descrição das Interfaces e Classes
@@ -23,7 +23,7 @@ A interface `Navegador de Internet` é responsável por implementar a funcionali
 
 ## Entidades
 
-Existem algumas entidades representadas no diagrama, como `IPhone`, `FireFox`, `Chrome`, `Nokia 3310`, `Motorola Razr V3`, `Walkman` e `Discman`, que representam diferentes dispositivos ou aplicativos que podem usar as interfaces e classes mencionadas acima.
+Existem algumas entidades representadas no diagrama, como `IPhone`, `Safari`, `Chrome`, `Nokia E62`, `BlackBerry`, `Walkman` e `Ipod`, que representam diferentes dispositivos ou aplicativos que podem usar as interfaces e classes mencionadas acima.
 
 ## Como Visualizar o Diagrama
 
